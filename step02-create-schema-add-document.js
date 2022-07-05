@@ -18,7 +18,7 @@ dotenv.config();
 
       // Create an instance of model 'Student'
       const student1 = new Student({
-        name: "jlivingstonsg",
+        name: "asghar",
         age: 35
       });
 
