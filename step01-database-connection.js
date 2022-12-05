@@ -9,7 +9,7 @@ var mongoose = require('mongoose');
     //console.log('mongoose open for business');
     
     // Option 2 -- To keep reference of connection
-    const connection = mongoose.createConnection("mongodb+srv://asgharibraheem:askari@5718@cluster0.56nr7no.mongodb.net/test",{ useNewUrlParser: true, useUnifiedTopology:true });
+    const connection = mongoose.createConnection("",{ useNewUrlParser: true, useUnifiedTopology:true });
     await connection;
     console.log('mongoose open for business');
 
