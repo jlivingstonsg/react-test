@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-var dotenv = require('dotenv');
-dotenv.config();
+//var dotenv = require('dotenv');
+//dotenv.config();
 
 (async ()=>{
   try {
@@ -9,7 +9,7 @@ dotenv.config();
     //console.log('mongoose open for business');
     
     // Option 2 -- To keep reference of connection
-    const connection = mongoose.createConnection(process.env.MONGODB_CONNECTION_STRING,{ useNewUrlParser: true, useUnifiedTopology:true });
+    const connection = mongoose.createConnection("mongodb+srv://asgharibraheem:askari@5718@cluster0.56nr7no.mongodb.net/test",{ useNewUrlParser: true, useUnifiedTopology:true });
     await connection;
     console.log('mongoose open for business');
 
@@ -22,6 +22,4 @@ dotenv.config();
   catch(error){
     console.log( 'mongoose connection error: ',error);
   }
-    
-
 })();
